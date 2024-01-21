@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.card{
+  @apply flex flex-col items-center justify-center; 
+  @apply bg-white text-black;
+  @apply rounded-xl;
+  @apply m-4 p-6;
+}
+.card_row{
+  @apply flex flex-row items-center justify-center;
+  @apply w-full;
+  @apply my-2;
+}

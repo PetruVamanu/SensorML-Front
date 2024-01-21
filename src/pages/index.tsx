@@ -1,6 +1,7 @@
 import { Formik } from 'formik';
 import React, { useState } from 'react';
 
+import CsvTable from '@/components/CSVTable';
 import { DetailsBar } from '@/components/DetailsBar';
 import {
   INITIAL_PREDICTION,
@@ -68,6 +69,16 @@ const Index = () => {
         <DetailsBar />
       </Formik>
       <Graphic prediction={prediction} loading={loading} />
+
+      <div className="card">
+        <div className="card_row">
+          <CsvTable csvFile="./boli_simptome.csv" />
+        </div>
+        <div className="card_row">
+          <CsvTable csvFile="./air.csv" />
+          <CsvTable csvFile="./humidity.csv" />
+        </div>
+      </div>
     </div>
   );
 };

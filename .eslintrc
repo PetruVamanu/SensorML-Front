@@ -62,6 +62,7 @@
         "@typescript-eslint/no-unused-vars": "off",
         "unused-imports/no-unused-imports": "error",
         "jsx-a11y/label-has-associated-control": "off",
+        "react/no-array-index-key": "off",
         "unused-imports/no-unused-vars": [
           "error",
           { "argsIgnorePattern": "^_" }
