@@ -1,0 +1,12 @@
+.container {
+  @apply py-3 px-6 w-full;
+}
+
+.row {
+  @apply flex flex-wrap justify-between w-full;
+  @apply flex-col md:flex-row;
+}
+
+.field, .button {
+  @apply flex-1 w-full my-2;
+}

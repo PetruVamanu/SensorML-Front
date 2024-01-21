@@ -1,0 +1,10 @@
+.detailsbar{
+  @apply flex flex-col items-center justify-center; 
+  @apply bg-blue-500 text-white;
+  @apply rounded-xl;
+  @apply m-4 p-6;
+}
+.form{
+  @apply w-full px-6;
+  @apply flex flex-col items-center justify-center;
+}
