@@ -9,4 +9,5 @@ export type PredictionType = {
   diseases: string;
   link: string;
   ok: boolean;
+  testing_error: number;
 };

@@ -8,5 +8,4 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
 
 export default MyApp;
 
-// TODO : 2. Import csv files
 // TODO : 3. Call corelation matrix in API

@@ -11,7 +11,7 @@ export type GraphicProps = {
 };
 
 export const Graphic: React.FC<GraphicProps> = ({ prediction, loading }) => {
-  const { diseases, link } = prediction || {};
+  const { diseases, link, testing_error } = prediction || {};
 
   if (loading) {
     return (
@@ -33,6 +33,10 @@ export const Graphic: React.FC<GraphicProps> = ({ prediction, loading }) => {
       <div className="py-4 text-2xl font-bold">
         Possible Diseases: {diseases}
       </div>
+      <div className="py-4 text-2xl font-bold">
+        Testing error: {testing_error}
+      </div>
+
       <img src={link} alt="Graphic" />
     </div>
   );

@@ -8,6 +8,7 @@ import {
   validationSchema,
 } from '@/components/DetailsBar/formConfig';
 import { Graphic } from '@/components/Graphic';
+import { Plots } from '@/components/Plots';
 import type { PredictionParamsType, PredictionType } from '@/types/predition';
 
 const Index = () => {
@@ -47,6 +48,7 @@ const Index = () => {
       //   diseases: '[AVC, BBC, SEW]',
       //   link: 'https://i.imgur.com/nlxoxPr.png',
       //   ok: true,
+      //   testing_error: 0.1,
       // };
 
       setPrediction(data);
@@ -79,6 +81,7 @@ const Index = () => {
           <CsvTable csvFile="./humidity.csv" />
         </div>
       </div>
+      <Plots />
     </div>
   );
 };
